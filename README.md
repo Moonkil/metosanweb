@@ -1,18 +1,20 @@
 # METOSAN Website
 
-Static multi-language landing site for METOSAN, a metronome for macOS.
+Static multi-language landing site for METOSAN, a character metronome for iPhone, iPad and Mac.
 
-## Editing images in VS Code
+## Images
 
-Images are separated into editable assets:
+- `assets/screenshots/` — original App Store screenshots (large PNGs, source only)
+- `assets/images/screens/` — web-optimized JPEGs used by the site, per language (`ko`, `en`, `ja`, `zh`):
+  - `iphone-{lang}-01-main … 05-store.jpg` (640px wide, from `iPhone-6.3`)
+  - `ipad-{lang}-01-main.jpg` (900px wide, from `iPad-13`)
+  - `mac-{lang}-01-main.jpg`, `mac-{lang}-02-shortcuts.jpg` (cropped from `Mac-2880x1800`)
 
-- `assets/images/app-icon.webp` — navigation icon and favicon
-- `assets/images/metosan-hero.webp` — main MacBook and METOSAN waving illustration
-- `assets/images/feature-preview.webp` — app feature screenshot
+The page swaps screenshots by language through the `data-shot` attribute (`{l}` is replaced with the language code). To refresh a screenshot, regenerate the JPEG with the same filename, e.g.:
 
-To change an image, replace the relevant WebP file while keeping the **same filename**. Or change the image URL in `index.html` to use your own PNG/WebP image. Preview the site locally, commit, and push to the `main` branch. Connected Cloudflare deployment should update automatically.
-
-The language selector, page layout and styling remain in `index.html`.
+```sh
+sips -s format jpeg -s formatOptions 80 --resampleWidth 640 assets/screenshots/iPhone-6.3/ko-01-main.png --out assets/images/screens/iphone-ko-01-main.jpg
+```
 
 ## Pages
 - `/` — main landing page, Korean/English/Japanese/Simplified Chinese
@@ -22,6 +24,6 @@ The language selector, page layout and styling remain in `index.html`.
 ## Deployment
 Deploy as a static site. There is no build step. Use project root `.` if the hosting provider requests an output directory.
 
-Mac App Store download link should be updated after the app listing is live.
+App Store / Mac App Store badges are disabled ("출시 준비 중") until the listings are live. When released, replace each `<span class="badge" role="link" aria-disabled="true">` in `index.html` with an `<a class="badge" href="https://apps.apple.com/...">` and remove the `SOON` label.
 
 © 2026 danbee Inc.

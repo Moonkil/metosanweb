@@ -1,5 +1,513 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f9f7ff"><meta name="description" content="가장 귀여운 메트로놈, 메토상. 귀여운 캐릭터와 함께 박자를 맞춰보세요."><title>METOSAN — 가장 귀여운 메트로놈, 메토상</title><link rel="icon" href="assets/images/app-icon-metosan.png"><style>
-:root{--ink:#222033;--mint:#55cdaa;--purple:#9b7ce0;--muted:#626078}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;background:#faf9fe}a{color:inherit}button{font:inherit}.shell{max-width:1280px;margin:auto;padding:0 42px}.header{height:90px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:13px;text-decoration:none;font-size:27px;font-weight:850;letter-spacing:-1px}.brand img{width:52px;height:52px;border-radius:14px;object-fit:cover}.nav{display:flex;align-items:center;gap:34px;font-size:15px;font-weight:650}.nav a{text-decoration:none}.nav a:hover,.footer a:hover{color:#6d4cba}.hero-wrap{background:radial-gradient(ellipse at 70% 34%,#f2e9ff 0,transparent 52%),linear-gradient(135deg,#fff 0%,#f8f6ff 100%)}.hero{min-height:610px;display:grid;grid-template-columns:47% 53%;align-items:center;position:relative}.hero-copy{padding:30px 0 60px;position:relative;z-index:1}.eyebrow{font-weight:800;color:#4ab99c;letter-spacing:.02em;font-size:18px}.hero h1{font-size:clamp(39px,4.6vw,66px);line-height:1.18;letter-spacing:-.065em;margin:22px 0 24px;word-break:keep-all}.lead{font-size:clamp(16px,1.5vw,20px);line-height:1.85;color:#46435c;word-break:keep-all;margin:0 0 36px}.store{display:inline-flex;align-items:center;gap:13px;border-radius:20px;padding:17px 25px;background:#242034;color:#fff;text-decoration:none;font-size:19px;font-weight:750;box-shadow:0 10px 22px #2c214522;transition:transform .2s}.store:hover{transform:translateY(-3px)}.apple{width:26px;height:26px;display:block;flex:0 0 26px;object-fit:contain}.note{margin-top:15px;color:var(--muted);font-size:13px}.hero-art{width:118%;max-width:none;justify-self:start;transform:translateX(-5%);filter:drop-shadow(0 15px 12px #2e244014)}.features{background:#fff;border-top:1px solid #eeeaf5;border-bottom:1px solid #eeeaf5}.features-inner{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;padding-top:36px;padding-bottom:36px}.feature{text-align:center;font-size:14px;font-weight:700;line-height:1.45}.feature .glyph{font-size:30px;display:block;margin-bottom:11px}.section{padding-top:86px;padding-bottom:86px}.section h2{font-size:clamp(27px,3vw,40px);letter-spacing:-.045em;margin:0 0 15px}.section .sub{color:var(--muted);line-height:1.8;margin:0 0 32px}.showcase{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px}.showcase img{width:100%;height:auto;border-radius:15px;box-shadow:0 15px 35px #23203618}.feature-gallery{display:grid;grid-template-columns:1fr;gap:16px;min-width:0}.feature-gallery img{display:block;object-fit:contain}.showcase-copy{min-width:0}.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.chip{padding:10px 15px;border-radius:99px;background:#eee9fb;color:#5a438b;font-size:13px;font-weight:700}.support{background:#252331;color:white}.support .shell{display:flex;justify-content:space-between;gap:30px;align-items:center}.support h2{font-size:32px;margin:0 0 12px}.support p{color:#d4d0e2;line-height:1.7;margin:0}.mail{font-size:clamp(18px,2.5vw,28px);font-weight:750;color:#8fe5c8;text-decoration:none;overflow-wrap:anywhere}.footer{background:#252331;color:#bdb8cb;border-top:1px solid #454151}.footer .shell{padding-top:25px;padding-bottom:30px;display:flex;justify-content:space-between;gap:20px;font-size:13px}.footer a{text-decoration:none}.small{font-size:13px;color:#77728c}.language{border:1px solid #ddd7ed;border-radius:10px;background:#fff;padding:8px 10px;color:var(--ink);font-weight:600}#download-note{display:none;margin-top:12px;color:#66547d;font-size:13px}#download-note:target{display:block}@media(max-width:900px){.shell{padding-left:25px;padding-right:25px}.hero{grid-template-columns:1fr 1fr;min-height:520px}.hero-art{width:140%;transform:translateX(-12%)}.features-inner{grid-template-columns:repeat(3,1fr)}.showcase{gap:30px}}@media(max-width:640px){.shell{padding-left:22px;padding-right:22px}.header{height:74px}.brand{font-size:21px;gap:9px}.brand img{width:42px;height:42px;border-radius:12px}.nav{gap:15px;font-size:13px}.nav a:first-child{display:none}.hero{display:flex;flex-direction:column;min-height:0;padding-top:36px}.hero-copy{padding:0;text-align:center}.eyebrow{font-size:14px}.hero h1{font-size:42px;margin:17px 0}.lead{font-size:15px;line-height:1.75;margin-bottom:24px}.store{font-size:16px;padding:14px 20px;border-radius:15px}.hero-art{width:115%;align-self:center;transform:none;margin:8px -8% -6px}.features-inner{grid-template-columns:repeat(3,1fr);gap:25px 10px;padding-top:28px;padding-bottom:28px}.feature{font-size:12px}.feature .glyph{font-size:25px}.section{padding-top:55px;padding-bottom:55px}.showcase{display:flex;flex-direction:column-reverse;gap:24px}.support .shell{display:block}.support h2{font-size:27px}.mail{display:inline-block;margin-top:20px}.footer .shell{flex-direction:column;gap:10px}.language{padding:6px 7px}}
-</style></head><body><div class="hero-wrap"><header class="header shell"><a class="brand" href="#top"><img src="assets/images/app-icon-metosan.png" alt="메토상 앱 아이콘">METOSAN</a><nav class="nav"><a href="#features">기능</a><a href="#support">지원</a><select class="language" aria-label="언어 선택" id="lang"><option value="ko">한국어</option><option value="en">English</option><option value="ja">日本語</option><option value="zh">简体中文</option></select></nav></header><main id="top"><div class="hero shell"><div class="hero-copy"><div class="eyebrow">METOSAN FOR macOS</div><h1 data-i="headline">가장 귀여운<br>메트로놈, 메토상</h1><p class="lead" data-i="lead">귀여운 캐릭터와 함께 박자를 맞춰보세요.<br>다양한 리듬과 사운드, 취향에 맞는 색상 설정까지.<br>매일의 음악 연습을 조금 더 즐겁게.</p><a class="store" href="#download-note" aria-label="Mac App Store 다운로드 링크 준비 중"><img class="apple" src="assets/images/apple-white.svg" alt="" aria-hidden="true"><span data-i="download">Mac App Store에서 받기 ↗</span></a><div class="note" data-i="compat">macOS 14.0 이상</div><div id="download-note" data-i="soon">앱스토어 공개 후 다운로드 링크가 연결됩니다.</div></div><img class="hero-art" src="assets/images/metosan-hero.png" alt="맥북 화면 밖으로 나와 무표정하게 손을 흔드는 메토상 캐릭터"></div></div><div class="features" id="features"><div class="features-inner shell"><div class="feature"><span class="glyph">◉</span><span data-i="f1">움직이는 캐릭터</span></div><div class="feature"><span class="glyph">◖♫◗</span><span data-i="f2">4가지 사운드</span></div><div class="feature"><span class="glyph">♫</span><span data-i="f3">다양한 리듬</span></div><div class="feature"><span class="glyph">≋</span><span>BPM & TAP</span></div><div class="feature"><span class="glyph">◐</span><span data-i="f5">컬러 커스터마이징</span></div><div class="feature"><span class="glyph">◎</span><span data-i="f6">다국어 지원</span></div></div></div><section class="section shell showcase" id="showcase"><div class="showcase-copy"><h2 data-i="section">나만의 리듬, 나만의 사운드</h2><p class="sub" data-i="sectiondesc">박수, 메트로놈, 우드블록, 하이햇 사운드 중 선택하고, BPM과 리듬 패턴을 조절하세요. 배경색과 포인트 색상도 원하는 대로 바꿀 수 있어요.</p><div class="chips"><span class="chip">Clap</span><span class="chip">Metronome</span><span class="chip">Woodblock</span><span class="chip">Hi-hat</span></div></div><div class="feature-gallery"><img id="feature-01" src="assets/images/feature-kr-01.png" alt="METOSAN 캐릭터 및 연습 화면" loading="lazy"><img id="feature-02" src="assets/images/feature-kr-02.png" alt="METOSAN 리듬, 사운드 및 설정 화면" loading="lazy"></div></section><section class="section support" id="support"><div class="shell"><div><h2>Support</h2><p data-i="support">문의나 개선 의견이 있다면 이메일로 알려주세요.</p></div><a class="mail" href="mailto:contact@danbee.ai?subject=METOSAN%20Support">✉ contact@danbee.ai</a></div></section></main><footer class="footer"><div class="shell"><span>© 2026 danbee Inc. · METOSAN</span><span><a href="mailto:contact@danbee.ai?subject=METOSAN%20Support">Contact</a> · <a href="/privacy/" data-i="privacy">개인정보 처리방침</a></span></div></footer><script>
-const i18n={ko:{headline:'가장 귀여운<br>메트로놈, 메토상',lead:'귀여운 캐릭터와 함께 박자를 맞춰보세요.<br>다양한 리듬과 사운드, 취향에 맞는 색상 설정까지.<br>매일의 음악 연습을 조금 더 즐겁게.',download:'Mac App Store에서 받기 ↗',compat:'macOS 14.0 이상',soon:'앱스토어 공개 후 다운로드 링크가 연결됩니다.',f1:'움직이는 캐릭터',f2:'4가지 사운드',f3:'다양한 리듬',f5:'컬러 커스터마이징',f6:'다국어 지원',section:'나만의 리듬, 나만의 사운드',sectiondesc:'박수, 메트로놈, 우드블록, 하이햇 사운드 중 선택하고, BPM과 리듬 패턴을 조절하세요. 배경색과 포인트 색상도 원하는 대로 바꿀 수 있어요.',support:'문의나 개선 의견이 있다면 이메일로 알려주세요.',privacy:'개인정보 처리방침'},en:{headline:'The Cutest<br>Metronome, METOSAN',lead:'Practice with an adorable animated companion.<br>Choose your rhythm, sound, and favorite colors.<br>Make every practice session a little more fun.',download:'Get it on the Mac App Store ↗',compat:'Requires macOS 14.0 or later',soon:'The download link will be available after the App Store release.',f1:'Animated character',f2:'4 sound options',f3:'Rhythm patterns',f5:'Custom colors',f6:'4 languages',section:'Your Rhythm, Your Sound, Your Style.',sectiondesc:'Choose from clap, metronome, woodblock, and hi-hat sounds. Adjust tempo and rhythms, and customize the background and accent colors.',support:'Questions or feedback? Reach us by email.',privacy:'Privacy Policy'},ja:{headline:'いちばんかわいい<br>メトロノーム、メトさん',lead:'かわいいキャラクターと一緒にリズム練習。<br>リズムも音も、色も自分好みに。<br>毎日の練習をもっと楽しく。',download:'Mac App Storeで入手 ↗',compat:'macOS 14.0以降',soon:'App Store公開後にダウンロードリンクを追加します。',f1:'動くキャラクター',f2:'4種類のサウンド',f3:'多彩なリズム',f5:'カラー設定',f6:'4言語対応',section:'リズムも音も、自分好みに。',sectiondesc:'拍手、メトロノーム、ウッドブロック、ハイハットから音を選択。テンポやリズム、背景色やアクセントカラーも設定できます。',support:'ご質問やご意見はメールでお問い合わせください。',privacy:'プライバシーポリシー'},zh:{headline:'最可爱的节拍器，<br>METOSAN',lead:'和可爱的角色一起练习节奏。<br>自由选择节奏、音色与喜欢的配色。<br>让每天的音乐练习更有趣。',download:'前往 Mac App Store ↗',compat:'需要 macOS 14.0 或更高版本',soon:'App Store 上架后将提供下载链接。',f1:'动态角色',f2:'4种音色',f3:'多种节奏',f5:'自定义颜色',f6:'支持4种语言',section:'节奏、音色，随心选择。',sectiondesc:'可选择拍手、节拍器、木鱼块和踩镲音色，调整速度与节奏，并自定义背景和强调色。',support:'如有问题或建议，欢迎通过电子邮件联系我们。',privacy:'隐私政策'}};const select=document.getElementById('lang');function setLang(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-i]').forEach(el=>{el.innerHTML=i18n[lang][el.dataset.i]});select.value=lang;const assetLang={ko:'kr',en:'en',ja:'jp',zh:'cn'}[lang];document.getElementById('feature-01').src='assets/images/feature-'+assetLang+'-01.png';document.getElementById('feature-02').src='assets/images/feature-'+assetLang+'-02.png';}select.addEventListener('change',e=>setLang(e.target.value));
-</script></body></html>
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#effbf6">
+<meta name="description" content="가장 귀여운 메트로놈, 메토상. iPhone, iPad, Mac에서 귀여운 캐릭터와 함께 박자를 맞춰보세요.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="METOSAN — 가장 귀여운 메트로놈">
+<meta property="og:description" content="iPhone, iPad, Mac에서 귀여운 캐릭터와 함께 박자를 맞춰보세요.">
+<title>METOSAN — 가장 귀여운 메트로놈, 메토상</title>
+<link rel="icon" href="assets/images/app-icon-metosan.png">
+<link rel="apple-touch-icon" href="assets/images/app-icon-metosan.png">
+<style>
+:root{
+  --ink:#1f1d2b;
+  --text:#4a4759;
+  --muted:#6f6b80;
+  --mint:#5adcb5;
+  --mint-deep:#1f9c79;
+  --mint-soft:#e3f7ef;
+  --mint-bg:#effbf6;
+  --lilac:#c9b8ec;
+  --line:#e7e4ee;
+  --card:#ffffff;
+  --page:#fbfafd;
+  --night:#23212f;
+  --radius:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);background:var(--page);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Hiragino Sans","PingFang SC","Noto Sans KR","Noto Sans JP","Noto Sans SC",system-ui,sans-serif;line-height:1.5}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{word-break:keep-all;margin:0}
+p{margin:0}
+.shell{max-width:1200px;margin:0 auto;padding:0 40px}
+html:not([lang="ko"]) *{word-break:normal!important;line-break:strict}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 12px;border-radius:8px;z-index:10}
+.skip:focus{left:8px}
+
+/* Header */
+.top{position:sticky;top:0;z-index:5;background:rgba(239,251,246,.82);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s}
+.top.scrolled{border-bottom-color:#d7efe5}
+.header{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-size:22px;font-weight:850;letter-spacing:-.5px}
+.brand img{width:40px;height:40px;border-radius:11px}
+.nav{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:650}
+.nav a{text-decoration:none;color:var(--text)}
+.nav a:hover{color:var(--mint-deep)}
+.language{border:1px solid #cfe8de;border-radius:10px;background:#fff;padding:7px 10px;color:var(--ink);font:inherit;font-size:14px;font-weight:600}
+
+/* Hero */
+.hero-wrap{background:radial-gradient(60% 70% at 78% 40%,#d3f4e7 0,transparent 70%),radial-gradient(40% 50% at 95% 90%,#ece4fb 0,transparent 70%),linear-gradient(180deg,var(--mint-bg) 0%,var(--page) 100%);overflow:hidden}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:40px;padding-top:56px;padding-bottom:72px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:750;color:var(--mint-deep);letter-spacing:.02em}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--mint)}
+.hero h1{font-size:clamp(40px,5.2vw,68px);line-height:1.14;letter-spacing:-.055em;margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--mint-deep)}
+.lead{font-size:clamp(16px,1.45vw,19px);line-height:1.8;color:var(--text);word-break:keep-all;max-width:34em}
+.hero-cta{margin-top:34px}
+
+/* Store badges (disabled until release) */
+.badges{display:flex;flex-wrap:wrap;gap:12px}
+.badge{display:inline-flex;align-items:center;gap:12px;min-width:200px;padding:11px 20px 11px 16px;border-radius:16px;background:#e9e7ef;color:#77738a;border:1px solid #dcd9e4;cursor:not-allowed;user-select:none;position:relative}
+.badge img{width:26px;height:26px;opacity:.45}
+.badge span{display:flex;flex-direction:column;line-height:1.15}
+.badge small{font-size:11.5px;font-weight:650;letter-spacing:.01em}
+.badge b{font-size:19px;font-weight:700;letter-spacing:-.02em}
+.badge .soon{position:absolute;top:-9px;right:-6px;background:var(--mint);color:#0d3b2d;font-size:10.5px;font-weight:800;letter-spacing:.04em;padding:3px 8px;border-radius:99px;flex-direction:row}
+.cta-note{margin-top:14px;font-size:13.5px;color:var(--muted)}
+
+/* Device frames */
+.phone{position:relative;border-radius:46px;padding:9px;background:#1e1c27;box-shadow:0 30px 60px -20px rgba(32,40,60,.35),0 0 0 1px rgba(0,0,0,.06);width:100%}
+.phone img{border-radius:38px;width:100%;height:auto;aspect-ratio:640/1391;object-fit:cover;background:#f8f8fb}
+.hero-art{width:118%;max-width:none;justify-self:start;transform:translateX(-4%);filter:drop-shadow(0 15px 12px #2e244014)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Feature strip */
+.strip{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.strip-inner{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;padding-top:30px;padding-bottom:30px}
+.strip-item{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;font-size:14px;font-weight:700;line-height:1.35;word-break:keep-all}
+.ico{width:46px;height:46px;border-radius:14px;background:var(--mint-soft);display:grid;place-items:center;color:var(--mint-deep)}
+.ico svg{width:24px;height:24px}
+
+/* Sections */
+.section{padding-top:110px;padding-bottom:110px}
+.kicker{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--mint-deep);margin-bottom:14px}
+.section h2{font-size:clamp(30px,3.4vw,44px);line-height:1.22;letter-spacing:-.045em;margin-bottom:18px}
+.desc{font-size:17px;line-height:1.85;color:var(--text);word-break:keep-all}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.split.flip .copy{order:2}
+.shots{display:flex;justify-content:center;gap:28px;align-items:flex-start}
+.shots .phone{max-width:280px}
+.shots .phone:nth-child(2){margin-top:56px}
+.points{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:14px}
+.points li{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.6;color:var(--text);word-break:keep-all}
+.points li::before{content:"";flex:0 0 20px;height:20px;margin-top:3px;border-radius:50%;background:var(--mint-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.5l2.6 2.5L14 7.5' fill='none' stroke='%231f9c79' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.chip{padding:8px 14px;border-radius:99px;background:#fff;border:1px solid var(--line);font-size:13.5px;font-weight:700;color:var(--text)}
+.chip.on{background:var(--mint);border-color:var(--mint);color:#0d3b2d}
+.fine{margin-top:18px;font-size:13.5px;color:var(--muted);line-height:1.7}
+.tint{background:linear-gradient(180deg,#f6f2fd 0%,var(--page) 100%)}
+.swatches{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px;align-items:center}
+.swatches i{width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+.swatches .sep{width:1px;height:22px;background:var(--line);margin:0 6px}
+
+/* Mac */
+.mac{background:var(--mint-bg)}
+.mac .split{grid-template-columns:1.15fr .85fr}
+.mac-shot{border-radius:22px;box-shadow:0 30px 60px -24px rgba(31,80,64,.35)}
+.keys{margin-top:28px;display:grid;gap:10px}
+.key-row{display:flex;align-items:center;gap:14px;font-size:15.5px;color:var(--text)}
+kbd{min-width:68px;text-align:center;font:700 14px/1 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;padding:9px 10px;border-radius:9px;background:#fff;border:1px solid #d5ece2;box-shadow:0 2px 0 #d5ece2;color:var(--ink)}
+
+/* Platforms */
+.platforms{text-align:center}
+.platforms .desc{max-width:36em;margin:0 auto}
+.devices{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px;text-align:left}
+.device{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 26px;display:flex;flex-direction:column}
+.device-img{height:300px;border-radius:16px;background:var(--mint-bg);display:flex;align-items:flex-end;justify-content:center;overflow:hidden;padding:22px 22px 0;margin-bottom:22px}
+.device-img img{height:100%;width:auto;border-radius:14px 14px 0 0;box-shadow:0 10px 30px -12px rgba(30,60,50,.3);object-fit:cover;object-position:top}
+.device h3{font-size:20px;letter-spacing:-.02em}
+.device p{margin-top:6px;font-size:14.5px;color:var(--muted);line-height:1.6;word-break:keep-all}
+.device .req{margin-top:auto;padding-top:14px;font-size:13px;font-weight:700;color:var(--mint-deep)}
+.platforms .badges{justify-content:center;margin-top:48px}
+
+/* Support + footer */
+.support{background:var(--night);color:#fff}
+.support .shell{display:flex;justify-content:space-between;gap:30px;align-items:center;padding-top:72px;padding-bottom:72px}
+.support h2{font-size:30px;margin-bottom:10px}
+.support p{color:#cfcbe0;line-height:1.7}
+.mail{font-size:clamp(18px,2.4vw,26px);font-weight:750;color:#8fe9cc;text-decoration:none;overflow-wrap:anywhere}
+.mail:hover{text-decoration:underline}
+.footer{background:var(--night);color:#a9a4ba;border-top:1px solid #3c3949}
+.footer .shell{padding-top:24px;padding-bottom:30px;display:flex;justify-content:space-between;gap:20px;font-size:13px}
+.footer a{text-decoration:none}.footer a:hover{color:#fff}
+
+/* Responsive */
+@media (max-width:980px){
+  .shell{padding:0 28px}
+  .hero{grid-template-columns:1fr;gap:20px;padding-top:44px;text-align:center}
+  .lead{margin:0 auto}
+  .hero-cta .badges{justify-content:center}
+  .hero-art{width:112%;max-width:680px;justify-self:center;transform:none;margin:4px -6% -10px}
+  .strip-inner{grid-template-columns:repeat(3,1fr);row-gap:26px}
+  .split,.mac .split{grid-template-columns:1fr;gap:48px}
+  .split.flip .copy{order:0}
+  .devices{grid-template-columns:1fr 1fr 1fr;gap:16px}
+  .device-img{height:240px}
+}
+@media (max-width:720px){
+  .devices{grid-template-columns:1fr}
+  .device-img{height:280px}
+}
+@media (max-width:640px){
+  .shell{padding:0 18px}
+  .header{height:62px}
+  .brand{font-size:19px;gap:8px}.brand img{width:34px;height:34px;border-radius:9px}
+  .nav{gap:14px;font-size:13.5px}
+  .nav .hide-sm{display:none}
+  .language{padding:5px 6px;font-size:13px}
+  .hero h1{font-size:40px}
+  .badge{min-width:0;flex:1 1 150px;padding:10px 14px 10px 12px;gap:9px}
+  .badge b{font-size:16px}
+  .badge img{width:22px;height:22px}
+  .strip-inner{gap:20px 8px}
+  .strip-item{font-size:12.5px}
+  .section{padding-top:72px;padding-bottom:72px}
+  .desc{font-size:16px}
+  .shots{gap:14px}
+  .shots .phone{border-radius:30px;padding:6px}
+  .shots .phone img{border-radius:25px}
+  .shots .phone:nth-child(2){margin-top:36px}
+  .key-row{font-size:14.5px}
+  kbd{min-width:58px;font-size:13px}
+  .support .shell{display:block;padding-top:56px;padding-bottom:56px}
+  .mail{display:inline-block;margin-top:18px}
+  .footer .shell{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+
+<div class="top" id="topbar">
+  <header class="header shell">
+    <a class="brand" href="#top"><img src="assets/images/app-icon-metosan.png" alt="" width="40" height="40">METOSAN</a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="#practice" data-i="navFeatures">기능</a>
+      <a class="hide-sm" href="#characters" data-i="navCharacters">캐릭터</a>
+      <a class="hide-sm" href="#download" data-i="navDownload">다운로드</a>
+      <a href="#support" data-i="navSupport">지원</a>
+      <select class="language" aria-label="Language" id="lang">
+        <option value="ko">한국어</option>
+        <option value="en">English</option>
+        <option value="ja">日本語</option>
+        <option value="zh">简体中文</option>
+      </select>
+    </nav>
+  </header>
+</div>
+
+<main id="top">
+  <!-- Hero -->
+  <div class="hero-wrap">
+    <div class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow">iPhone · iPad · Mac</div>
+        <h1 data-i="headline">가장 귀여운<br>메트로놈, <em>메토상</em></h1>
+        <p class="lead" data-i="lead">메토상과 함께 박자를 맞춰보세요.<br>탭 템포, 박자표, 4가지 사운드, 나만의 색상까지.<br>매일의 연습이 조금 더 즐거워져요.</p>
+        <div class="hero-cta">
+          <div class="badges">
+            <span class="badge" role="link" aria-disabled="true" data-i-label="badgeIosLabel" aria-label="App Store — 출시 준비 중">
+              <img src="assets/images/apple-black.svg" alt="" aria-hidden="true">
+              <span><small data-i="soon">출시 준비 중</small><b>App Store</b></span>
+              <span class="soon" aria-hidden="true">SOON</span>
+            </span>
+            <span class="badge" role="link" aria-disabled="true" data-i-label="badgeMacLabel" aria-label="Mac App Store — 출시 준비 중">
+              <img src="assets/images/apple-black.svg" alt="" aria-hidden="true">
+              <span><small data-i="soon">출시 준비 중</small><b>Mac App Store</b></span>
+              <span class="soon" aria-hidden="true">SOON</span>
+            </span>
+          </div>
+          <p class="cta-note" data-i="ctaNote">App Store 공개 후 다운로드 링크가 연결됩니다.</p>
+        </div>
+      </div>
+      <img class="hero-art" src="assets/images/metosan-hero.png" data-i-alt="altHero" alt="맥북 화면 밖으로 나와 무표정하게 손을 흔드는 메토상 캐릭터" width="1043" height="680">
+    </div>
+  </div>
+
+  <!-- Feature strip -->
+  <div class="strip">
+    <div class="strip-inner shell">
+      <div class="strip-item"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21c0-4 3-6 7-6s7 2 7 6"/></svg></span><span data-i="f1">움직이는 캐릭터</span></div>
+      <div class="strip-item"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg></span><span data-i="f2">4가지 사운드</span></div>
+      <div class="strip-item"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><span data-i="f3">박자표 & 리듬</span></div>
+      <div class="strip-item"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21h6"/><path d="M8.5 3h7L19 21H5L8.5 3z"/><path d="M12 17l4-10"/></svg></span><span>BPM & TAP</span></div>
+      <div class="strip-item"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></span><span data-i="f5">컬러 테마</span></div>
+      <div class="strip-item"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></span><span data-i="f6">4개 언어</span></div>
+    </div>
+  </div>
+
+  <!-- Practice -->
+  <section class="section shell split" id="practice">
+    <div class="copy">
+      <div class="kicker" data-i="k1">Practice</div>
+      <h2 data-i="h1">탭 한 번으로 시작하는<br>나만의 박자 연습</h2>
+      <p class="desc" data-i="d1">슬라이더와 ± 버튼으로 BPM을 맞추거나, TAP으로 원하는 템포를 바로 찾아보세요. 재생을 누르면 메토상이 박자에 맞춰 함께 움직여요.</p>
+      <ul class="points">
+        <li data-i="p1a">박수 · 메트로놈 · 우드블록 · 하이햇, 4가지 사운드</li>
+        <li data-i="p1b">박자표와 음표 단위를 골라 다양한 리듬 연습</li>
+        <li data-i="p1c">재생 중 Allegro 같은 템포말을 함께 표시</li>
+        <li data-i="p1d">볼륨 슬라이더로 연습 환경에 맞게 조절</li>
+      </ul>
+    </div>
+    <div class="shots">
+      <div class="phone"><img data-shot="iphone-{l}-02-playing" src="assets/images/screens/iphone-ko-02-playing.jpg" data-i-alt="altPlaying" alt="재생 중인 메토상 메트로놈 화면" width="640" height="1391" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- Characters -->
+  <section class="tint" id="characters">
+    <div class="section shell split flip">
+      <div class="copy">
+        <div class="kicker" data-i="k2">Characters</div>
+        <h2 data-i="h2">좌우로 넘기면<br>또 다른 메토상</h2>
+        <p class="desc" data-i="d2">기본 캐릭터와 함께 바로 연습을 시작하세요. 캐릭터 스토어에서 새로운 메토상을 만나고, 보유한 캐릭터는 모두 좌우 화살표로 바꿔가며 함께할 수 있어요.</p>
+        <div class="chips">
+          <span class="chip on" data-i="c0">트레이너</span>
+          <span class="chip" data-i="c1">피아노쌤</span>
+          <span class="chip" data-i="c2">드러머</span>
+          <span class="chip" data-i="c3">지휘자</span>
+        </div>
+        <p class="fine" data-i="fine2">추가 캐릭터는 앱 내 구입으로 제공돼요. 한 번 구입하면 같은 Apple 계정의 iPhone, iPad, Mac에서 모두 사용할 수 있고, 구매 내역은 언제든 복원할 수 있어요.</p>
+      </div>
+      <div class="shots">
+        <div class="phone"><img data-shot="iphone-{l}-04-my-characters" src="assets/images/screens/iphone-ko-04-my-characters.jpg" data-i-alt="altMine" alt="내 캐릭터 화면" width="640" height="1391" loading="lazy"></div>
+        <div class="phone"><img data-shot="iphone-{l}-05-store" src="assets/images/screens/iphone-ko-05-store.jpg" data-i-alt="altStore" alt="캐릭터 스토어 화면" width="640" height="1391" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customize -->
+  <section class="section shell split" id="customize">
+    <div class="copy">
+      <div class="kicker" data-i="k3">Customize</div>
+      <h2 data-i="h3">색상도, 한마디도<br>내 취향대로</h2>
+      <p class="desc" data-i="d3">강조 색상 4가지와 배경 색상 8가지를 조합해 나만의 테마를 만드세요. 연습 전과 후에 메토상이 건네는 말도 직접 바꿀 수 있어요.</p>
+      <div class="swatches" aria-hidden="true">
+        <i style="background:#ffa030"></i><i style="background:#b896fa"></i><i style="background:#5adcb5"></i><i style="background:#ff86ad"></i>
+        <span class="sep"></span>
+        <i style="background:#141416"></i><i style="background:#f9f9fb"></i><i style="background:#fff6e4"></i><i style="background:#dfeefd"></i><i style="background:#ebe3ff"></i><i style="background:#18233f"></i><i style="background:#16302a"></i><i style="background:#351b3a"></i>
+      </div>
+      <ul class="points">
+        <li data-i="p3a">한국어 · English · 日本語 · 简体中文 지원</li>
+        <li data-i="p3b">연습 전 · 후 문구를 직접 입력하는 사용자 지정 텍스트</li>
+      </ul>
+    </div>
+    <div class="shots">
+      <div class="phone"><img data-shot="iphone-{l}-03-settings" src="assets/images/screens/iphone-ko-03-settings.jpg" data-i-alt="altSettings" alt="테마와 텍스트 설정 화면" width="640" height="1391" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- Mac -->
+  <section class="mac" id="mac">
+    <div class="section shell split">
+      <img class="mac-shot" data-shot="mac-{l}-02-shortcuts" src="assets/images/screens/mac-ko-02-shortcuts.jpg" data-i-alt="altMac" alt="Mac용 메토상과 단축키 안내 화면" width="1400" height="1275" loading="lazy">
+      <div class="copy">
+        <div class="kicker">METOSAN for Mac</div>
+        <h2 data-i="h4">Mac에서는<br>키보드로 더 빠르게</h2>
+        <p class="desc" data-i="d4">악기에서 손을 떼지 않고도 템포를 바꿀 수 있도록, 자주 쓰는 동작을 단축키로 담았어요.</p>
+        <div class="keys">
+          <div class="key-row"><kbd>Space</kbd><span data-i="s1">재생 / 정지</span></div>
+          <div class="key-row"><kbd>T</kbd><span data-i="s2">탭 템포</span></div>
+          <div class="key-row"><kbd>↑ ↓</kbd><span data-i="s3">BPM 1씩 올리기 / 내리기</span></div>
+          <div class="key-row"><kbd>⇧ ↑ ↓</kbd><span data-i="s4">BPM 10씩 올리기 / 내리기</span></div>
+          <div class="key-row"><kbd>← →</kbd><span data-i="s5">이전 / 다음 사운드·캐릭터</span></div>
+          <div class="key-row"><kbd>Esc</kbd><span data-i="s6">설정·선택 창 닫기</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platforms / Download -->
+  <section class="section shell platforms" id="download">
+    <div class="kicker" data-i="k5">Download</div>
+    <h2 data-i="h5">iPhone, iPad, Mac 어디서나</h2>
+    <p class="desc" data-i="d5">같은 메토상을 모든 Apple 기기에서 만나보세요. 지금 App Store 출시를 준비하고 있어요.</p>
+    <div class="devices">
+      <div class="device">
+        <div class="device-img"><img data-shot="iphone-{l}-01-main" src="assets/images/screens/iphone-ko-01-main.jpg" alt="" width="640" height="1391" loading="lazy"></div>
+        <h3>iPhone</h3>
+        <p data-i="dv1">언제 어디서나 주머니 속 연습 파트너.</p>
+        <div class="req" data-i="soonIos">App Store 출시 준비 중</div>
+      </div>
+      <div class="device">
+        <div class="device-img"><img data-shot="ipad-{l}-01-main" src="assets/images/screens/ipad-ko-01-main.jpg" alt="" width="900" height="1200" loading="lazy"></div>
+        <h3>iPad</h3>
+        <p data-i="dv2">보면대 옆에 세워두기 좋은 큰 화면.</p>
+        <div class="req" data-i="soonIos">App Store 출시 준비 중</div>
+      </div>
+      <div class="device">
+        <div class="device-img"><img data-shot="mac-{l}-01-main" src="assets/images/screens/mac-ko-01-main.jpg" alt="" width="800" height="1192" loading="lazy"></div>
+        <h3>Mac</h3>
+        <p data-i="dv3">단축키로 빠르게. macOS 14.0 이상.</p>
+        <div class="req" data-i="soonMac">Mac App Store 출시 준비 중</div>
+      </div>
+    </div>
+    <div class="badges">
+      <span class="badge" role="link" aria-disabled="true" data-i-label="badgeIosLabel" aria-label="App Store — 출시 준비 중">
+        <img src="assets/images/apple-black.svg" alt="" aria-hidden="true">
+        <span><small data-i="soon">출시 준비 중</small><b>App Store</b></span>
+        <span class="soon" aria-hidden="true">SOON</span>
+      </span>
+      <span class="badge" role="link" aria-disabled="true" data-i-label="badgeMacLabel" aria-label="Mac App Store — 출시 준비 중">
+        <img src="assets/images/apple-black.svg" alt="" aria-hidden="true">
+        <span><small data-i="soon">출시 준비 중</small><b>Mac App Store</b></span>
+        <span class="soon" aria-hidden="true">SOON</span>
+      </span>
+    </div>
+    <p class="cta-note" data-i="ctaNote">App Store 공개 후 다운로드 링크가 연결됩니다.</p>
+  </section>
+
+  <!-- Support -->
+  <section class="support" id="support">
+    <div class="shell">
+      <div><h2>Support</h2><p data-i="support">문의나 개선 의견이 있다면 이메일로 알려주세요.</p></div>
+      <a class="mail" href="mailto:contact@danbee.ai?subject=METOSAN%20Support">✉ contact@danbee.ai</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <span>© 2026 danbee Inc. · METOSAN</span>
+    <span><a href="/support/" data-i="supportPage">고객지원</a> · <a href="/privacy/" data-i="privacy">개인정보 처리방침</a></span>
+  </div>
+</footer>
+
+<script>
+const i18n={
+ko:{
+  title:'METOSAN — 가장 귀여운 메트로놈, 메토상',
+  navFeatures:'기능',navCharacters:'캐릭터',navDownload:'다운로드',navSupport:'지원',
+  headline:'가장 귀여운<br>메트로놈, <em>메토상</em>',
+  lead:'메토상과 함께 박자를 맞춰보세요.<br>탭 템포, 박자표, 4가지 사운드, 나만의 색상까지.<br>매일의 연습이 조금 더 즐거워져요.',
+  soon:'출시 준비 중',badgeIosLabel:'App Store — 출시 준비 중',badgeMacLabel:'Mac App Store — 출시 준비 중',
+  ctaNote:'App Store 공개 후 다운로드 링크가 연결됩니다.',
+  f1:'움직이는 캐릭터',f2:'4가지 사운드',f3:'박자표 & 리듬',f5:'컬러 테마',f6:'4개 언어',
+  k1:'Practice',h1:'탭 한 번으로 시작하는<br>나만의 박자 연습',
+  d1:'슬라이더와 ± 버튼으로 BPM을 맞추거나, TAP으로 원하는 템포를 바로 찾아보세요. 재생을 누르면 메토상이 박자에 맞춰 함께 움직여요.',
+  p1a:'박수 · 메트로놈 · 우드블록 · 하이햇, 4가지 사운드',p1b:'박자표와 음표 단위를 골라 다양한 리듬 연습',p1c:'재생 중 Allegro 같은 템포말을 함께 표시',p1d:'볼륨 슬라이더로 연습 환경에 맞게 조절',
+  k2:'Characters',h2:'좌우로 넘기면<br>또 다른 메토상',
+  d2:'기본 캐릭터와 함께 바로 연습을 시작하세요. 캐릭터 스토어에서 새로운 메토상을 만나고, 보유한 캐릭터는 모두 좌우 화살표로 바꿔가며 함께할 수 있어요.',
+  c0:'트레이너',c1:'피아노쌤',c2:'드러머',c3:'지휘자',
+  fine2:'추가 캐릭터는 앱 내 구입으로 제공돼요. 한 번 구입하면 같은 Apple 계정의 iPhone, iPad, Mac에서 모두 사용할 수 있고, 구매 내역은 언제든 복원할 수 있어요.',
+  k3:'Customize',h3:'색상도, 한마디도<br>내 취향대로',
+  d3:'강조 색상 4가지와 배경 색상 8가지를 조합해 나만의 테마를 만드세요. 연습 전과 후에 메토상이 건네는 말도 직접 바꿀 수 있어요.',
+  p3a:'한국어 · English · 日本語 · 简体中文 지원',p3b:'연습 전 · 후 문구를 직접 입력하는 사용자 지정 텍스트',
+  h4:'Mac에서는<br>키보드로 더 빠르게',d4:'악기에서 손을 떼지 않고도 템포를 바꿀 수 있도록, 자주 쓰는 동작을 단축키로 담았어요.',
+  s1:'재생 / 정지',s2:'탭 템포',s3:'BPM 1씩 올리기 / 내리기',s4:'BPM 10씩 올리기 / 내리기',s5:'이전 / 다음 사운드·캐릭터',s6:'설정·선택 창 닫기',
+  k5:'Download',h5:'iPhone, iPad, Mac 어디서나',d5:'같은 메토상을 모든 Apple 기기에서 만나보세요. 지금 App Store 출시를 준비하고 있어요.',
+  dv1:'언제 어디서나 주머니 속 연습 파트너.',dv2:'보면대 옆에 세워두기 좋은 큰 화면.',dv3:'단축키로 빠르게. macOS 14.0 이상.',
+  soonIos:'App Store 출시 준비 중',soonMac:'Mac App Store 출시 준비 중',
+  support:'문의나 개선 의견이 있다면 이메일로 알려주세요.',supportPage:'고객지원',privacy:'개인정보 처리방침',
+  altHero:'맥북 화면 밖으로 나와 무표정하게 손을 흔드는 메토상 캐릭터',altPlaying:'재생 중인 메토상 메트로놈 화면',altMine:'내 캐릭터 화면',altStore:'캐릭터 스토어 화면',altSettings:'테마와 텍스트 설정 화면',altMac:'Mac용 메토상과 단축키 안내 화면'
+},
+en:{
+  title:'METOSAN — The Cutest Metronome',
+  navFeatures:'Features',navCharacters:'Characters',navDownload:'Download',navSupport:'Support',
+  headline:'The cutest<br>metronome, <em>METOSAN</em>',
+  lead:'Keep the beat with an adorable practice buddy.<br>Tap tempo, time signatures, four sounds and your own colors.<br>Make every practice session a little more fun.',
+  soon:'Coming soon',badgeIosLabel:'App Store — coming soon',badgeMacLabel:'Mac App Store — coming soon',
+  ctaNote:'Download links will be available once METOSAN is released on the App Store.',
+  f1:'Animated character',f2:'4 sounds',f3:'Time signatures',f5:'Color themes',f6:'4 languages',
+  k1:'Practice',h1:'Find your tempo<br>with a single tap',
+  d1:'Set the BPM with the slider and ± buttons, or tap out the tempo you have in mind. Press play and METOSAN moves along with the beat.',
+  p1a:'Four sounds: clap, metronome, woodblock and hi-hat',p1b:'Choose time signatures and note values for different rhythms',p1c:'Tempo markings like Allegro shown while playing',p1d:'Volume slider to fit any practice room',
+  k2:'Characters',h2:'Swipe for<br>another METOSAN',
+  d2:'Start practicing right away with the default character. Meet new METOSAN looks in the Character Store, and switch between every character you own with the arrows.',
+  c0:'Trainer',c1:'Piano Teacher',c2:'Drummer',c3:'Conductor',
+  fine2:'Additional characters are available as in-app purchases. Buy once and use them on every iPhone, iPad and Mac signed in with the same Apple Account, and restore your purchases at any time.',
+  k3:'Customize',h3:'Your colors,<br>your words',
+  d3:'Mix 4 accent colors and 8 background colors to create your own theme. You can even change what METOSAN says before and after practice.',
+  p3a:'Available in 한국어, English, 日本語 and 简体中文',p3b:'Custom text for before and after practice',
+  h4:'Faster on Mac<br>with your keyboard',d4:'Common actions have keyboard shortcuts, so you can change the tempo without letting go of your instrument.',
+  s1:'Play / Stop',s2:'Tap tempo',s3:'BPM up / down by 1',s4:'BPM up / down by 10',s5:'Previous / next sound or character',s6:'Close settings or selection',
+  k5:'Download',h5:'On iPhone, iPad and Mac',d5:'The same METOSAN on all your Apple devices. We are getting ready for the App Store release.',
+  dv1:'A practice partner that fits in your pocket.',dv2:'A big screen that sits nicely next to your music stand.',dv3:'Quick keyboard shortcuts. Requires macOS 14.0 or later.',
+  soonIos:'Coming soon to the App Store',soonMac:'Coming soon to the Mac App Store',
+  support:'Questions or feedback? Reach us by email.',supportPage:'Support',privacy:'Privacy Policy',
+  altHero:'METOSAN waving from a MacBook screen',altPlaying:'METOSAN metronome screen while playing',altMine:'My Characters screen',altStore:'Character Store screen',altSettings:'Theme and text settings screen',altMac:'METOSAN for Mac with the keyboard shortcuts guide'
+},
+ja:{
+  title:'METOSAN — いちばんかわいいメトロノーム、メトさん',
+  navFeatures:'機能',navCharacters:'キャラクター',navDownload:'ダウンロード',navSupport:'サポート',
+  headline:'いちばんかわいい<br>メトロノーム、<em>メトさん</em>',
+  lead:'メトさんと一緒にリズム練習。<br>タップテンポ、拍子、4種類のサウンド、好きな色まで。<br>毎日の練習をもっと楽しく。',
+  soon:'近日公開',badgeIosLabel:'App Store — 近日公開',badgeMacLabel:'Mac App Store — 近日公開',
+  ctaNote:'App Store公開後にダウンロードリンクを追加します。',
+  f1:'動くキャラクター',f2:'4種類のサウンド',f3:'拍子とリズム',f5:'カラーテーマ',f6:'4言語対応',
+  k1:'Practice',h1:'タップひとつで<br>自分のテンポを',
+  d1:'スライダーと±ボタンでBPMを合わせたり、TAPで思い通りのテンポをすぐに見つけられます。再生するとメトさんがビートに合わせて動きます。',
+  p1a:'拍手・メトロノーム・ウッドブロック・ハイハットの4種類',p1b:'拍子と音符の単位を選んでさまざまなリズムを練習',p1c:'再生中にAllegroなどの速度記号を表示',p1d:'練習環境に合わせて音量を調整',
+  k2:'Characters',h2:'左右に切り替えて<br>別のメトさんに',
+  d2:'基本キャラクターですぐに練習を始められます。キャラクターストアで新しいメトさんに出会い、所有するキャラクターは左右の矢印で切り替えられます。',
+  c0:'トレーナー',c1:'ピアノの先生',c2:'ドラマー',c3:'指揮者',
+  fine2:'追加キャラクターはアプリ内課金で提供されます。一度購入すれば、同じApple AccountのiPhone、iPad、Macすべてで使え、購入はいつでも復元できます。',
+  k3:'Customize',h3:'色もセリフも<br>自分好みに',
+  d3:'4色のアクセントカラーと8色の背景色を組み合わせて、自分だけのテーマに。練習の前後にメトさんがかける言葉も変えられます。',
+  p3a:'한국어・English・日本語・简体中文に対応',p3b:'練習前・後のセリフを自由に入力できるカスタムテキスト',
+  h4:'Macではキーボードで<br>もっとすばやく',d4:'よく使う操作はショートカットに。楽器から手を離さずにテンポを変えられます。',
+  s1:'再生 / 停止',s2:'タップテンポ',s3:'BPMを1ずつ上げる / 下げる',s4:'BPMを10ずつ上げる / 下げる',s5:'前 / 次のサウンド・キャラクター',s6:'設定・選択画面を閉じる',
+  k5:'Download',h5:'iPhone、iPad、Macで',d5:'すべてのAppleデバイスで同じメトさんに会えます。現在App Storeでの公開を準備中です。',
+  dv1:'いつでもどこでもポケットの練習パートナー。',dv2:'譜面台の横に置きやすい大きな画面。',dv3:'ショートカットですばやく。macOS 14.0以降。',
+  soonIos:'App Storeで近日公開',soonMac:'Mac App Storeで近日公開',
+  support:'ご質問やご意見はメールでお問い合わせください。',supportPage:'サポート',privacy:'プライバシーポリシー',
+  altHero:'MacBookの画面から出てきて手を振るメトさん',altPlaying:'再生中のメトさんメトロノーム画面',altMine:'マイキャラクター画面',altStore:'キャラクターストア画面',altSettings:'テーマとテキストの設定画面',altMac:'Mac版メトさんとショートカット一覧'
+},
+zh:{
+  title:'METOSAN — 最可爱的节拍器',
+  navFeatures:'功能',navCharacters:'角色',navDownload:'下载',navSupport:'支持',
+  headline:'最可爱的节拍器，<br><em>METOSAN</em>',
+  lead:'和 METOSAN 一起练习节奏。<br>点击测速、拍号、4种音色，还有你喜欢的配色。<br>让每天的练习更有趣。',
+  soon:'即将上架',badgeIosLabel:'App Store — 即将上架',badgeMacLabel:'Mac App Store — 即将上架',
+  ctaNote:'App Store 上架后将提供下载链接。',
+  f1:'动态角色',f2:'4种音色',f3:'拍号与节奏',f5:'配色主题',f6:'支持4种语言',
+  k1:'Practice',h1:'轻点一下，<br>找到你的速度',
+  d1:'用滑块和 ± 按钮设置 BPM，或用 TAP 直接点出想要的速度。按下播放，METOSAN 会跟着节拍一起动起来。',
+  p1a:'拍手、节拍器、木鱼块、踩镲，4种音色',p1b:'选择拍号与音符时值，练习多种节奏',p1c:'播放时显示 Allegro 等速度术语',p1d:'音量滑块，适应各种练习环境',
+  k2:'Characters',h2:'左右切换，<br>遇见另一个 METOSAN',
+  d2:'使用默认角色即可立即开始练习。在角色商店遇见新的 METOSAN，已拥有的角色都可以用左右箭头切换。',
+  c0:'默认角色',c1:'钢琴老师',c2:'鼓手',c3:'指挥家',
+  fine2:'额外角色通过 App 内购买提供。一次购买，即可在登录同一 Apple 账户的 iPhone、iPad 和 Mac 上使用，购买记录可随时恢复。',
+  k3:'Customize',h3:'颜色和台词，<br>都随你喜欢',
+  d3:'组合 4 种强调色和 8 种背景色，打造属于你的主题。练习前后 METOSAN 说的话也可以自己修改。',
+  p3a:'支持 한국어、English、日本語、简体中文',p3b:'可自行输入练习前后台词的自定义文本',
+  h4:'在 Mac 上<br>用键盘更快操作',d4:'常用操作都有快捷键，不必放下乐器也能调整速度。',
+  s1:'播放 / 停止',s2:'点击测速',s3:'BPM 增加 / 减少 1',s4:'BPM 增加 / 减少 10',s5:'上一个 / 下一个音色或角色',s6:'关闭设置或选择窗口',
+  k5:'Download',h5:'iPhone、iPad、Mac 随处可用',d5:'在所有 Apple 设备上遇见同一个 METOSAN。我们正在准备 App Store 上架。',
+  dv1:'随身携带的练习伙伴。',dv2:'大屏幕，适合放在谱架旁。',dv3:'快捷键操作更高效。需要 macOS 14.0 或更高版本。',
+  soonIos:'即将登陆 App Store',soonMac:'即将登陆 Mac App Store',
+  support:'如有问题或建议，欢迎通过电子邮件联系我们。',supportPage:'客户支持',privacy:'隐私政策',
+  altHero:'从 MacBook 屏幕中探出身来挥手的 METOSAN',altPlaying:'METOSAN 节拍器播放中画面',altMine:'我的角色画面',altStore:'角色商店画面',altSettings:'主题与文本设置画面',altMac:'Mac 版 METOSAN 与快捷键说明'
+}};
+const LANGS=['ko','en','ja','zh'];
+const select=document.getElementById('lang');
+function setLang(lang){
+  if(!LANGS.includes(lang))lang='ko';
+  const t=i18n[lang];
+  document.documentElement.lang=lang==='zh'?'zh-Hans':lang;
+  document.title=t.title;
+  document.querySelectorAll('[data-i]').forEach(el=>{if(t[el.dataset.i]!=null)el.innerHTML=t[el.dataset.i]});
+  document.querySelectorAll('[data-i-alt]').forEach(el=>{el.alt=t[el.dataset.iAlt]});
+  document.querySelectorAll('[data-i-label]').forEach(el=>{el.setAttribute('aria-label',t[el.dataset.iLabel])});
+  document.querySelectorAll('[data-shot]').forEach(el=>{el.src='assets/images/screens/'+el.dataset.shot.replace('{l}',lang)+'.jpg'});
+  select.value=lang;
+}
+function initialLang(){
+  const q=new URLSearchParams(location.search).get('lang');
+  if(LANGS.includes(q))return q;
+  try{const s=localStorage.getItem('metosan-lang');if(LANGS.includes(s))return s}catch(e){}
+  for(const l of (navigator.languages||[navigator.language||''])){const c=String(l).slice(0,2).toLowerCase();if(LANGS.includes(c))return c}
+  return 'ko';
+}
+select.addEventListener('change',e=>{setLang(e.target.value);try{localStorage.setItem('metosan-lang',e.target.value)}catch(err){}});
+const initial=initialLang();if(initial!=='ko')setLang(initial);
+const bar=document.getElementById('topbar');
+addEventListener('scroll',()=>bar.classList.toggle('scrolled',scrollY>8),{passive:true});
+</script>
+</body>
+</html>
