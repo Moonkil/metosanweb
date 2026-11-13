@@ -10,6 +10,11 @@ Static multi-language landing site for METOSAN, a character metronome for iPhone
   - `ipad-{lang}-01-main.jpg` (900px wide, from `iPad-13`)
   - `mac-{lang}-01-main.jpg`, `mac-{lang}-02-shortcuts.jpg` (cropped from `Mac-2880x1800`)
 
+- `assets/images/motion/` — character motion frames (language-independent):
+  - `clap-apart.jpg` + `beat-1…4.jpg` — overlays on `iphone-{lang}-02-playing.jpg` that replay the playing screen at 120 BPM (captured from the iOS simulator via a temporary UI test in the app repo)
+  - `{clap,metronome,woodblock,hihat}-{1,2}.webp` — the app's own character art frames for the "Motions" section
+  - `icon-*.png` — sound icons cropped from the app screen
+
 The page swaps screenshots by language through the `data-shot` attribute (`{l}` is replaced with the language code). To refresh a screenshot, regenerate the JPEG with the same filename, e.g.:
 
 ```sh
