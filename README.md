@@ -29,6 +29,6 @@ sips -s format jpeg -s formatOptions 80 --resampleWidth 640 assets/screenshots/i
 ## Deployment
 Deploy as a static site. There is no build step. Use project root `.` if the hosting provider requests an output directory.
 
-The iPhone and iPad versions are available on the [App Store](https://apps.apple.com/kr/app/metosan-메토상/id6830031648). Both App Store badges in `index.html` link to this listing, and release copy is localized in all four languages. Mac App Store badges remain disabled ("출시 준비 중") until the Mac listing is live.
+The iPhone, iPad and Mac versions are available on the App Store. Both iOS badges in `index.html` link to the [iPhone and iPad listing](https://apps.apple.com/kr/app/metosan-메토상/id6830031648), and both Mac badges link to the [Mac listing](https://apps.apple.com/app/id6830031648). Release copy is localized in all four languages.
 
 © 2026 danbee Inc.
