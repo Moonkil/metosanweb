@@ -29,6 +29,6 @@ sips -s format jpeg -s formatOptions 80 --resampleWidth 640 assets/screenshots/i
 ## Deployment
 Deploy as a static site. There is no build step. Use project root `.` if the hosting provider requests an output directory.
 
-App Store / Mac App Store badges are disabled ("출시 준비 중") until the listings are live. When released, replace each `<span class="badge" role="link" aria-disabled="true">` in `index.html` with an `<a class="badge" href="https://apps.apple.com/...">` and remove the `SOON` label.
+The iPhone, iPad and Mac versions are available on the App Store. Both iOS badges in `index.html` link to the [iPhone and iPad listing](https://apps.apple.com/kr/app/metosan-메토상/id6830031648), and both Mac badges link to the [Mac listing](https://apps.apple.com/app/id6830031648). Release copy is localized in all four languages.
 
 © 2026 danbee Inc.
