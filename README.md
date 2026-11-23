@@ -15,6 +15,8 @@ Static multi-language landing site for METOSAN, a character metronome for iPhone
   - `{clap,metronome,woodblock,hihat}-{1,2}.webp` — the app's own character art frames for the "Motions" section
   - `icon-*.png` — sound icons cropped from the app screen
 
+- `assets/images/xmas/` — Christmas characters (Santa, Reindeer, Elf, Snowman) for the "Christmas" section: `{char}-{sound}-0{1,2}.webp`, 600px tall, made from the app repo's `METOSAN/Artworks/` originals using the same pairing as `Artworks/asset-map.tsv`. `app-icon-christmas.png` is the seasonal header icon and favicon, and `metosan-hero-christmas.webp` (snowman costume, 1600×1067, background cut out; the 2496px source PNG is kept outside the repo) is the seasonal hero. After the season, point `index.html` back to `app-icon-metosan.png` and `metosan-hero.png` (with its `width="1043" height="680"` and the original `altHero` text).
+
 The page swaps screenshots by language through the `data-shot` attribute (`{l}` is replaced with the language code). To refresh a screenshot, regenerate the JPEG with the same filename, e.g.:
 
 ```sh

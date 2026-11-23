@@ -7,10 +7,10 @@
 <meta name="description" content="기특하고 귀여운 메트로놈, 메토상. iPhone, iPad, Mac에서 귀여운 캐릭터와 함께 박자를 맞춰보세요.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="METOSAN — 기특하고 귀여운 메트로놈, 메토상">
-<meta property="og:description" content="iPhone, iPad, Mac에서 귀여운 캐릭터와 함께 박자를 맞춰보세요.">
+<meta property="og:description" content="크리스마스 캐릭터 4종 출시! 산타·순록·엘프·눈사람 메토상과 함께 박자를 맞춰보세요.">
 <title>METOSAN — 기특하고 귀여운 메트로놈, 메토상</title>
-<link rel="icon" href="assets/images/app-icon-metosan.png">
-<link rel="apple-touch-icon" href="assets/images/app-icon-metosan.png">
+<link rel="icon" href="assets/images/app-icon-christmas.png">
+<link rel="apple-touch-icon" href="assets/images/app-icon-christmas.png">
 <style>
 :root{
   --ink:#1f1d2b;
@@ -82,6 +82,47 @@ a.badge img{opacity:1;filter:invert(1)}
 .phone img{border-radius:38px;width:100%;height:auto;aspect-ratio:640/1391;object-fit:cover;background:#f8f8fb}
 .hero-art{width:118%;max-width:none;justify-self:start;transform:translateX(-4%);filter:drop-shadow(0 15px 12px #2e244014)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Christmas season */
+.hero-wrap{position:relative}
+.hero{position:relative;z-index:1}
+.snow{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.xpill{display:inline-flex;align-items:center;gap:9px;margin-bottom:14px;padding:6px 14px 6px 6px;border-radius:99px;background:#fff;border:1px solid #f1d4d4;box-shadow:0 6px 16px -10px rgba(180,40,40,.45);text-decoration:none;font-size:14px;font-weight:750;color:#a3292f}
+.xpill span{padding:3px 9px;border-radius:99px;background:#d8363c;color:#fff;font-size:11.5px;font-weight:850;letter-spacing:.06em}
+.xpill:hover{border-color:#e3a5a5}
+.hero-copy .eyebrow{display:flex;width:max-content}
+.xmas{position:relative;overflow:hidden;color:#fff;background:radial-gradient(70% 60% at 50% 0%,#33467a 0,transparent 70%),linear-gradient(180deg,#1b2547 0%,#24264d 55%,#2b2450 100%)}
+.xmas .section{position:relative;z-index:1}
+.xmas::before{content:"";position:absolute;left:0;right:0;top:0;height:40px;background:radial-gradient(circle at 20px 22px,#ffd36e 0 5px,transparent 6px) 0 0/80px 40px,radial-gradient(circle at 60px 26px,#ff6b6b 0 5px,transparent 6px) 0 0/80px 40px;opacity:.9;animation:twinkle 2.4s ease-in-out infinite alternate;z-index:1}
+.xmas::after{content:"";position:absolute;left:0;right:0;top:0;height:40px;background:radial-gradient(120% 60px at 50% -30px,transparent 50%,rgba(255,255,255,.25) 51%,transparent 53%) 0 0/80px 40px;z-index:1}
+@keyframes twinkle{from{opacity:.55}to{opacity:1}}
+.xmas-head{max-width:680px;margin:0 auto;text-align:center}
+.xmas .kicker{color:#ffd36e}
+.xmas .desc{color:#d7d9ef}
+.xgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:52px}
+.xcard{margin:0;border-radius:var(--radius);padding:24px 16px 18px;display:flex;flex-direction:column;align-items:center;background:radial-gradient(80% 55% at 50% 42%,rgba(255,255,255,.2) 0,transparent 70%),rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+.xcard .motion-art{height:270px}
+.xcard.f2 .motion-art img:first-child{visibility:hidden}
+.xcard.f2 .motion-art .alt{visibility:visible}
+.xname{margin-top:14px;font-size:19px;font-weight:850;letter-spacing:-.02em}
+.xchips{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:12px}
+.xchip{font:inherit;font-size:12.5px;font-weight:700;padding:5px 10px;border-radius:99px;border:1px solid rgba(255,255,255,.22);background:transparent;color:#d7d9ef;cursor:pointer;white-space:nowrap}
+.xchip:hover{border-color:rgba(255,255,255,.5);color:#fff}
+.xchip[aria-pressed="true"]{background:#fff;border-color:#fff;color:#a3292f}
+.xchip:focus-visible{outline:3px solid #ffd36e;outline-offset:2px}
+.xcard[data-c="santa"] .xname{color:#ff8f8f}
+.xcard[data-c="deer"] .xname{color:#f2c08b}
+.xcard[data-c="elf"] .xname{color:#8fe0a8}
+.xcard[data-c="snowman"] .xname{color:#cfe6ff}
+.xfoot{margin-top:40px;text-align:center}
+.xhint{font-size:14px;color:#b9bcd9}
+.xmas .badges{justify-content:center;margin-top:22px}
+.xmas a.badge{background:#fff;color:var(--ink);border-color:#fff}
+.xmas a.badge img{filter:none}
+.xmas a.badge:focus-visible{outline-color:#ffd36e}
+.xmas .fine{color:#a9acc9;margin-top:16px}
+.chip.new{border-color:#f1c4c4;color:#a3292f;background:#fff6f6}
+@media (prefers-reduced-motion:reduce){.xmas::before{animation:none}}
 
 /* Feature strip */
 .strip{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -175,6 +216,8 @@ kbd{min-width:68px;text-align:center;font:700 14px/1 -apple-system,BlinkMacSyste
   .split.flip .copy{order:0}
   .devices{grid-template-columns:1fr 1fr 1fr;gap:16px}
   .motion-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+  .xgrid{grid-template-columns:repeat(2,1fr);gap:16px}
+  .hero-copy .eyebrow{margin:0 auto}
   .device-img{height:240px}
 }
 @media (max-width:720px){
@@ -206,6 +249,12 @@ kbd{min-width:68px;text-align:center;font:700 14px/1 -apple-system,BlinkMacSyste
   .motion-art{height:180px}
   .motion-card figcaption{font-size:13.5px;padding:7px 12px 7px 9px;gap:7px}
   .motion-card figcaption img{height:20px}
+  .xgrid{gap:10px;margin-top:34px}
+  .xcard{padding:16px 8px 14px}
+  .xcard .motion-art{height:190px}
+  .xname{font-size:16px;margin-top:10px}
+  .xchip{font-size:11.5px;padding:4px 8px}
+  .xmas::before,.xmas::after{background-size:56px 40px}
   kbd{min-width:58px;font-size:13px}
   .support .shell{display:block;padding-top:56px;padding-bottom:56px}
   .mail{display:inline-block;margin-top:18px}
@@ -218,8 +267,9 @@ kbd{min-width:68px;text-align:center;font:700 14px/1 -apple-system,BlinkMacSyste
 
 <div class="top" id="topbar">
   <header class="header shell">
-    <a class="brand" href="#top"><img src="assets/images/app-icon-metosan.png" alt="" width="40" height="40">METOSAN</a>
+    <a class="brand" href="#top"><img src="assets/images/app-icon-christmas.png" alt="" width="40" height="40">METOSAN</a>
     <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="#christmas" data-i="navXmas">새 스킨</a>
       <a class="hide-sm" href="#practice" data-i="navFeatures">기능</a>
       <a class="hide-sm" href="#characters" data-i="navCharacters">캐릭터</a>
       <a class="hide-sm" href="#download" data-i="navDownload">다운로드</a>
@@ -237,8 +287,10 @@ kbd{min-width:68px;text-align:center;font:700 14px/1 -apple-system,BlinkMacSyste
 <main id="top">
   <!-- Hero -->
   <div class="hero-wrap">
+    <canvas class="snow" data-color="190,214,236" aria-hidden="true"></canvas>
     <div class="hero shell">
       <div class="hero-copy">
+        <a class="xpill" href="#christmas"><span>NEW</span><b data-i="heroPill">크리스마스 스킨 4종 추가</b></a>
         <div class="eyebrow">iPhone · iPad · Mac</div>
         <h1 data-i="headline">기특하고 귀여운<br>메트로놈, <em>메토상</em></h1>
         <p class="lead" data-i="lead">메토상과 함께 박자를 맞춰보세요.<br>탭 템포, 박자표, 4가지 사운드, 나만의 색상까지.<br>매일의 연습이 조금 더 즐거워져요.</p>
@@ -256,7 +308,7 @@ kbd{min-width:68px;text-align:center;font:700 14px/1 -apple-system,BlinkMacSyste
           <p class="cta-note" data-i="ctaNote">iPhone·iPad·Mac 버전이 출시되었습니다. 지금 App Store에서 다운로드하세요.</p>
         </div>
       </div>
-      <img class="hero-art" src="assets/images/metosan-hero.png" data-i-alt="altHero" alt="맥북 화면 밖으로 나와 무표정하게 손을 흔드는 메토상 캐릭터" width="1043" height="680">
+      <img class="hero-art" src="assets/images/metosan-hero-christmas.webp" data-i-alt="altHero" alt="눈사람 옷을 입고 맥북 화면 밖으로 나와 손을 흔드는 메토상 캐릭터" width="1600" height="1067" fetchpriority="high">
     </div>
   </div>
 
@@ -271,6 +323,50 @@ kbd{min-width:68px;text-align:center;font:700 14px/1 -apple-system,BlinkMacSyste
       <div class="strip-item"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></span><span data-i="f6">4개 언어</span></div>
     </div>
   </div>
+
+  <!-- Christmas characters (frames from the app's own artwork, see assets/images/xmas/) -->
+  <section class="xmas" id="christmas">
+    <canvas class="snow" data-color="255,255,255" aria-hidden="true"></canvas>
+    <div class="section shell">
+      <div class="xmas-head">
+        <div class="kicker">Christmas Collection</div>
+        <h2 data-i="xh">크리스마스 시즌엔<br>메토상과 함께 연습해요</h2>
+        <p class="desc" data-i="xd">산타, 순록, 엘프, 눈사람으로 변신한 메토상이 찾아왔어요. 캐릭터마다 크리스마스 악기 4가지를 들고, 고른 소리에 맞춰 박자를 연주해요.</p>
+      </div>
+      <div class="xgrid">
+        <figure class="xcard live" data-c="santa" data-sounds="handbell:hit,sleighbells:toggle,triangle:hit,woodblock:hit">
+          <div class="motion-art"><img src="assets/images/xmas/santa-handbell-01.webp" data-i-alt="xSanta" alt="산타" width="399" height="600" loading="lazy"><img class="alt" src="assets/images/xmas/santa-handbell-02.webp" alt="" width="399" height="600" loading="lazy"></div>
+          <figcaption class="xname" data-i="xSanta">산타</figcaption>
+          <div class="xchips"><button class="xchip" data-i="iHandbell">핸드벨</button><button class="xchip" data-i="iSleigh">슬레이벨</button><button class="xchip" data-i="iTriangle">트라이앵글</button><button class="xchip" data-i="iWoodblock">우드블록</button></div>
+        </figure>
+        <figure class="xcard live" data-c="deer" data-sounds="cowbell:hit,bellstick:toggle,jinglestick:toggle,claves:hit">
+          <div class="motion-art"><img src="assets/images/xmas/deer-cowbell-01.webp" data-i-alt="xDeer" alt="순록" width="399" height="600" loading="lazy"><img class="alt" src="assets/images/xmas/deer-cowbell-02.webp" alt="" width="399" height="600" loading="lazy"></div>
+          <figcaption class="xname" data-i="xDeer">순록</figcaption>
+          <div class="xchips"><button class="xchip" data-i="iCowbell">카우벨</button><button class="xchip" data-i="iBellStick">벨 스틱</button><button class="xchip" data-i="iJingle">징글 스틱</button><button class="xchip" data-i="iClaves">클라베스</button></div>
+        </figure>
+        <figure class="xcard live" data-c="elf" data-sounds="tambourine:hit,xylophone:toggle,kickdrum:hit,eggshaker:toggle">
+          <div class="motion-art"><img src="assets/images/xmas/elf-tambourine-01.webp" data-i-alt="xElf" alt="엘프" width="399" height="600" loading="lazy"><img class="alt" src="assets/images/xmas/elf-tambourine-02.webp" alt="" width="399" height="600" loading="lazy"></div>
+          <figcaption class="xname" data-i="xElf">엘프</figcaption>
+          <div class="xchips"><button class="xchip" data-i="iTambourine">탬버린</button><button class="xchip" data-i="iXylophone">실로폰</button><button class="xchip" data-i="iKick">킥</button><button class="xchip" data-i="iEgg">에그 셰이커</button></div>
+        </figure>
+        <figure class="xcard live" data-c="snowman" data-sounds="snare:toggle,stomp:hit,cymbals:hit,beardance:toggle">
+          <div class="motion-art"><img src="assets/images/xmas/snowman-snare-01.webp" data-i-alt="xSnowman" alt="눈사람" width="399" height="600" loading="lazy"><img class="alt" src="assets/images/xmas/snowman-snare-02.webp" alt="" width="399" height="600" loading="lazy"></div>
+          <figcaption class="xname" data-i="xSnowman">눈사람</figcaption>
+          <div class="xchips"><button class="xchip" data-i="iSnare">스네어</button><button class="xchip" data-i="iStomp">스톰프</button><button class="xchip" data-i="iCymbals">심벌즈</button><button class="xchip" data-i="iBear">베어 댄스</button></div>
+        </figure>
+      </div>
+      <div class="xfoot">
+        <p class="xhint" data-i="xhint">악기를 눌러 연주를 바꿔보세요</p>
+        <div class="badges">
+          <a class="badge" href="https://apps.apple.com/kr/app/metosan-메토상/id6830031648" data-i-label="badgeIosLabel" aria-label="App Store에서 다운로드">
+            <img src="assets/images/apple-black.svg" alt="" aria-hidden="true">
+            <span><small data-i="downloadIos">지금 다운로드</small><b>App Store</b></span>
+          </a>
+        </div>
+        <p class="fine" data-i="xfine">크리스마스 캐릭터는 캐릭터 스토어에서 앱 내 구입으로 만날 수 있어요.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Practice -->
   <section class="section shell split" id="practice">
@@ -338,6 +434,10 @@ kbd{min-width:68px;text-align:center;font:700 14px/1 -apple-system,BlinkMacSyste
           <span class="chip" data-i="c1">피아노쌤</span>
           <span class="chip" data-i="c2">드러머</span>
           <span class="chip" data-i="c3">지휘자</span>
+          <span class="chip new" data-i="xSanta">산타</span>
+          <span class="chip new" data-i="xDeer">순록</span>
+          <span class="chip new" data-i="xElf">엘프</span>
+          <span class="chip new" data-i="xSnowman">눈사람</span>
         </div>
         <p class="fine" data-i="fine2">추가 캐릭터는 앱 내 구입으로 제공돼요. 한 번 구입하면 같은 Apple 계정의 iPhone, iPad, Mac에서 모두 사용할 수 있고, 구매 내역은 언제든 복원할 수 있어요.</p>
       </div>
@@ -447,6 +547,11 @@ kbd{min-width:68px;text-align:center;font:700 14px/1 -apple-system,BlinkMacSyste
 const i18n={
 ko:{
   title:'METOSAN — 기특하고 귀여운 메트로놈, 메토상',
+  navXmas:'새 스킨',heroPill:'크리스마스 스킨 4종 추가',
+  xh:'크리스마스 시즌엔<br>메토상과 함께 연습해요',xd:'산타, 순록, 엘프, 눈사람으로 변신한 메토상이 찾아왔어요. 캐릭터마다 크리스마스 악기 4가지를 들고, 고른 소리에 맞춰 박자를 연주해요.',
+  xhint:'악기를 눌러 연주를 바꿔보세요',xfine:'크리스마스 캐릭터는 캐릭터 스토어에서 앱 내 구입으로 만날 수 있어요.',
+  xSanta:'산타',xDeer:'순록',xElf:'엘프',xSnowman:'눈사람',
+  iHandbell:'핸드벨',iSleigh:'슬레이벨',iTriangle:'트라이앵글',iWoodblock:'우드블록',iCowbell:'카우벨',iBellStick:'벨 스틱',iJingle:'징글 스틱',iClaves:'클라베스',iTambourine:'탬버린',iXylophone:'실로폰',iKick:'킥',iEgg:'에그 셰이커',iSnare:'스네어',iStomp:'스톰프',iCymbals:'심벌즈',iBear:'베어 댄스',
   navFeatures:'기능',navCharacters:'캐릭터',navDownload:'다운로드',navSupport:'지원',
   headline:'기특하고 귀여운<br>메트로놈, <em>메토상</em>',
   lead:'메토상과 함께 박자를 맞춰보세요.<br>탭 템포, 박자표, 4가지 사운드, 나만의 색상까지.<br>매일의 연습이 조금 더 즐거워져요.',
@@ -470,10 +575,15 @@ ko:{
   dv1:'언제 어디서나 주머니 속 연습 파트너.',dv2:'보면대 옆에 세워두기 좋은 큰 화면.',dv3:'단축키로 빠르게. macOS 14.0 이상.',
   availableIos:'App Store에서 다운로드 가능',availableMac:'Mac App Store에서 다운로드 가능',
   support:'문의나 개선 의견이 있다면 이메일로 알려주세요.',supportPage:'고객지원',privacy:'개인정보 처리방침',
-  altHero:'맥북 화면 밖으로 나와 무표정하게 손을 흔드는 메토상 캐릭터',altPlaying:'재생 중인 메토상 메트로놈 화면',altMine:'내 캐릭터 화면',altStore:'캐릭터 스토어 화면',altSettings:'테마와 텍스트 설정 화면',altMac:'Mac용 메토상과 단축키 안내 화면'
+  altHero:'눈사람 옷을 입고 맥북 화면 밖으로 나와 손을 흔드는 메토상 캐릭터',altPlaying:'재생 중인 메토상 메트로놈 화면',altMine:'내 캐릭터 화면',altStore:'캐릭터 스토어 화면',altSettings:'테마와 텍스트 설정 화면',altMac:'Mac용 메토상과 단축키 안내 화면'
 },
 en:{
   title:'METOSAN — The Cute, Hardworking Metronome',
+  navXmas:'New Skins',heroPill:'4 new Christmas skins',
+  xh:'Practice through the holidays<br>with METOSAN',xd:'METOSAN is dressed up as Santa, a reindeer, an elf and a snowman. Each character brings four Christmas instruments and plays along to the sound you choose.',
+  xhint:'Tap an instrument to switch',xfine:'Christmas characters are available as in-app purchases in the Character Store.',
+  xSanta:'Santa',xDeer:'Reindeer',xElf:'Elf',xSnowman:'Snowman',
+  iHandbell:'Handbell',iSleigh:'Sleigh Bells',iTriangle:'Triangle',iWoodblock:'Woodblock',iCowbell:'Cowbell',iBellStick:'Bell Stick',iJingle:'Jingle Stick',iClaves:'Claves',iTambourine:'Tambourine',iXylophone:'Xylophone',iKick:'Kick',iEgg:'Egg Shaker',iSnare:'Snare',iStomp:'Stomp',iCymbals:'Cymbals',iBear:'Bear Dance',
   navFeatures:'Features',navCharacters:'Characters',navDownload:'Download',navSupport:'Support',
   headline:'The cute, hardworking<br>metronome, <em>METOSAN</em>',
   lead:'Keep the beat with an adorable practice buddy.<br>Tap tempo, time signatures, four sounds and your own colors.<br>Make every practice session a little more fun.',
@@ -497,10 +607,15 @@ en:{
   dv1:'A practice partner that fits in your pocket.',dv2:'A big screen that sits nicely next to your music stand.',dv3:'Quick keyboard shortcuts. Requires macOS 14.0 or later.',
   availableIos:'Available on the App Store',availableMac:'Available on the Mac App Store',
   support:'Questions or feedback? Reach us by email.',supportPage:'Support',privacy:'Privacy Policy',
-  altHero:'METOSAN waving from a MacBook screen',altPlaying:'METOSAN metronome screen while playing',altMine:'My Characters screen',altStore:'Character Store screen',altSettings:'Theme and text settings screen',altMac:'METOSAN for Mac with the keyboard shortcuts guide'
+  altHero:'METOSAN in a snowman costume waving from a MacBook screen',altPlaying:'METOSAN metronome screen while playing',altMine:'My Characters screen',altStore:'Character Store screen',altSettings:'Theme and text settings screen',altMac:'METOSAN for Mac with the keyboard shortcuts guide'
 },
 ja:{
   title:'METOSAN — けなげでかわいいメトロノーム、メトさん',
+  navXmas:'新スキン',heroPill:'クリスマススキン4種登場',
+  xh:'クリスマスシーズンは<br>メトさんと一緒に練習',xd:'サンタ、トナカイ、エルフ、雪だるまに変身したメトさんがやってきました。キャラクターごとに4つのクリスマス楽器を持ち、選んだサウンドに合わせてリズムを刻みます。',
+  xhint:'楽器をタップして切り替え',xfine:'クリスマスキャラクターはキャラクターストアでアプリ内課金にて提供されます。',
+  xSanta:'サンタ',xDeer:'トナカイ',xElf:'エルフ',xSnowman:'雪だるま',
+  iHandbell:'ハンドベル',iSleigh:'スレイベル',iTriangle:'トライアングル',iWoodblock:'ウッドブロック',iCowbell:'カウベル',iBellStick:'ベルスティック',iJingle:'ジングルスティック',iClaves:'クラベス',iTambourine:'タンバリン',iXylophone:'シロフォン',iKick:'キック',iEgg:'エッグシェイカー',iSnare:'スネア',iStomp:'ストンプ',iCymbals:'シンバル',iBear:'ベアダンス',
   navFeatures:'機能',navCharacters:'キャラクター',navDownload:'ダウンロード',navSupport:'サポート',
   headline:'けなげでかわいい<br>メトロノーム、<em>メトさん</em>',
   lead:'メトさんと一緒にリズム練習。<br>タップテンポ、拍子、4種類のサウンド、好きな色まで。<br>毎日の練習をもっと楽しく。',
@@ -524,10 +639,15 @@ ja:{
   dv1:'いつでもどこでもポケットの練習パートナー。',dv2:'譜面台の横に置きやすい大きな画面。',dv3:'ショートカットですばやく。macOS 14.0以降。',
   availableIos:'App Storeで配信中',availableMac:'Mac App Storeで配信中',
   support:'ご質問やご意見はメールでお問い合わせください。',supportPage:'サポート',privacy:'プライバシーポリシー',
-  altHero:'MacBookの画面から出てきて手を振るメトさん',altPlaying:'再生中のメトさんメトロノーム画面',altMine:'マイキャラクター画面',altStore:'キャラクターストア画面',altSettings:'テーマとテキストの設定画面',altMac:'Mac版メトさんとショートカット一覧'
+  altHero:'雪だるまの衣装でMacBookの画面から出てきて手を振るメトさん',altPlaying:'再生中のメトさんメトロノーム画面',altMine:'マイキャラクター画面',altStore:'キャラクターストア画面',altSettings:'テーマとテキストの設定画面',altMac:'Mac版メトさんとショートカット一覧'
 },
 zh:{
   title:'METOSAN — 乖巧又可爱的节拍器',
+  navXmas:'新皮肤',heroPill:'新增 4 款圣诞皮肤',
+  xh:'圣诞季，<br>和 METOSAN 一起练习',xd:'METOSAN 变身为圣诞老人、驯鹿、精灵和雪人来啦。每个角色都带着 4 种圣诞乐器，跟着你选的音色一起打拍子。',
+  xhint:'点击乐器即可切换',xfine:'圣诞角色可在角色商店通过 App 内购买获得。',
+  xSanta:'圣诞老人',xDeer:'驯鹿',xElf:'精灵',xSnowman:'雪人',
+  iHandbell:'手铃',iSleigh:'雪橇铃',iTriangle:'三角铁',iWoodblock:'木块',iCowbell:'牛铃',iBellStick:'铃铛棒',iJingle:'串铃棒',iClaves:'响棒',iTambourine:'铃鼓',iXylophone:'木琴',iKick:'底鼓',iEgg:'蛋沙锤',iSnare:'军鼓',iStomp:'跺脚',iCymbals:'镲',iBear:'熊舞',
   navFeatures:'功能',navCharacters:'角色',navDownload:'下载',navSupport:'支持',
   headline:'乖巧又可爱的节拍器，<br><em>METOSAN</em>',
   lead:'和 METOSAN 一起练习节奏。<br>点击测速、拍号、4种音色，还有你喜欢的配色。<br>让每天的练习更有趣。',
@@ -551,7 +671,7 @@ zh:{
   dv1:'随身携带的练习伙伴。',dv2:'大屏幕，适合放在谱架旁。',dv3:'快捷键操作更高效。需要 macOS 14.0 或更高版本。',
   availableIos:'现已在 App Store 上架',availableMac:'现已在 Mac App Store 上架',
   support:'如有问题或建议，欢迎通过电子邮件联系我们。',supportPage:'客户支持',privacy:'隐私政策',
-  altHero:'从 MacBook 屏幕中探出身来挥手的 METOSAN',altPlaying:'METOSAN 节拍器播放中画面',altMine:'我的角色画面',altStore:'角色商店画面',altSettings:'主题与文本设置画面',altMac:'Mac 版 METOSAN 与快捷键说明'
+  altHero:'穿着雪人服装、从 MacBook 屏幕中探出身来挥手的 METOSAN',altPlaying:'METOSAN 节拍器播放中画面',altMine:'我的角色画面',altStore:'角色商店画面',altSettings:'主题与文本设置画面',altMac:'Mac 版 METOSAN 与快捷键说明'
 }};
 const LANGS=['ko','en','ja','zh'];
 const select=document.getElementById('lang');
@@ -607,6 +727,61 @@ function tidyText(lang){
       else{el.classList.add('f2');setTimeout(()=>el.classList.remove('f2'),140)}
     });
   },500);
+})();
+/* Christmas cards: each character cycles through its four instruments every two bars.
+   Tapping an instrument picks it and stops the cycle for that card.
+   'hit' flashes frame 2 on the beat, 'toggle' alternates frames, matching the app's strike/alternate styles. */
+(function(){
+  const cards=[...document.querySelectorAll('.xcard')];
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const src=(c,n,f)=>`assets/images/xmas/${c}-${n}-0${f}.webp`;
+  function pick(card,i){
+    const s=card._sounds[i];card._i=i;card.dataset.motion=s.m;card.classList.remove('f2');
+    const imgs=card.querySelectorAll('.motion-art img');
+    imgs[0].src=src(card.dataset.c,s.n,1);imgs[1].src=src(card.dataset.c,s.n,2);
+    card.querySelectorAll('.xchip').forEach((b,j)=>b.setAttribute('aria-pressed',j===i));
+  }
+  cards.forEach(card=>{
+    card._sounds=card.dataset.sounds.split(',').map(x=>{const[n,m]=x.split(':');return{n,m}});
+    card.querySelectorAll('.xchip').forEach((b,j)=>b.addEventListener('click',()=>{card.dataset.pinned='1';pick(card,j)}));
+    pick(card,0);
+  });
+  // Load every frame once a card is near the screen, so switching instruments never flashes.
+  const pre=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting)return;pre.unobserve(e.target);
+    e.target._sounds.forEach(s=>[1,2].forEach(f=>{new Image().src=src(e.target.dataset.c,s.n,f)}));
+  }),{rootMargin:'400px'});
+  cards.forEach(c=>pre.observe(c));
+  if(reduce)return;
+  let beats=0;
+  setInterval(()=>{
+    if(++beats%8)return;
+    cards.forEach(c=>{if(!c.dataset.pinned)pick(c,(c._i+1)%c._sounds.length)});
+  },500);
+})();
+
+/* Gentle snowfall on the hero and the Christmas section; paused off-screen and for reduced motion. */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  document.querySelectorAll('canvas.snow').forEach(cv=>{
+    const ctx=cv.getContext('2d'),rgb=cv.dataset.color;let w=0,h=0,flakes=[],on=false,raf=0;
+    function size(){
+      const r=devicePixelRatio||1;w=cv.clientWidth;h=cv.clientHeight;cv.width=w*r;cv.height=h*r;ctx.setTransform(r,0,0,r,0,0);
+      const n=Math.round(Math.min(90,w*h/14000));
+      flakes=Array.from({length:n},()=>({x:Math.random()*w,y:Math.random()*h,r:1+Math.random()*2.6,v:.25+Math.random()*.7,d:Math.random()*6.28,a:.45+Math.random()*.5}));
+    }
+    function tick(){
+      ctx.clearRect(0,0,w,h);
+      for(const f of flakes){
+        f.y+=f.v;f.d+=.01;f.x+=Math.sin(f.d)*.35;
+        if(f.y>h+4){f.y=-4;f.x=Math.random()*w}
+        ctx.beginPath();ctx.arc(f.x,f.y,f.r,0,6.28);ctx.fillStyle=`rgba(${rgb},${f.a})`;ctx.fill();
+      }
+      if(on)raf=requestAnimationFrame(tick);
+    }
+    new IntersectionObserver(([e])=>{on=e.isIntersecting;cancelAnimationFrame(raf);if(on)raf=requestAnimationFrame(tick)}).observe(cv);
+    new ResizeObserver(size).observe(cv);size();
+  });
 })();
 const bar=document.getElementById('topbar');
 addEventListener('scroll',()=>bar.classList.toggle('scrolled',scrollY>8),{passive:true});
